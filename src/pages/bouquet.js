@@ -5,6 +5,7 @@ import { initAudio, playPlopSound, playChimeSound, playRustleSound } from '../ut
 import { celebrate } from '../utils/confetti.js';
 import { isLoggedIn, getProfile } from '../utils/auth.js';
 import { showLoginPrompt } from './profile.js';
+import { openUpiPaymentModal } from '../utils/upi.js';
 
 let selectedFlowers = {}; // { flowerId: count }
 let undoStack = [];
@@ -17,6 +18,7 @@ let greeneryIndex = 0;
 let bouquetMessage = '';
 let wrappingPaperClass = 'wrap-classic';
 let currentPositions = null;
+let hasPromptedDonation = false;
 
 // Drag state
 let dragTarget = null;
@@ -784,6 +786,11 @@ function renderFinish(app) {
   // Fire confetti celebration!
   setTimeout(() => celebrate(), 300);
 
+  if (!hasPromptedDonation) {
+    hasPromptedDonation = true;
+    setTimeout(() => showDonatePrompt(), 900);
+  }
+
   // Bloom reveal animation — stagger flowers appearing
   const finishFlowers = document.querySelectorAll('#finish-preview .bouquet-flower');
   finishFlowers.forEach((flower, i) => {
@@ -968,6 +975,57 @@ function resetBuilder() {
   bouquetMessage = '';
   wrappingPaperClass = 'wrap-classic';
   currentPositions = null;
+  hasPromptedDonation = false;
+}
+
+function showDonatePrompt() {
+  const existing = document.getElementById('donation-prompt-overlay');
+  if (existing) {
+    existing.remove();
+  }
+
+  const overlay = document.createElement('div');
+  overlay.id = 'donation-prompt-overlay';
+  overlay.className = 'login-prompt-overlay';
+  overlay.innerHTML = `
+    <div class="login-prompt-card" role="dialog" aria-modal="true" aria-label="Support Digibouquet">
+      <button class="login-prompt-close" type="button" aria-label="Close">&times;</button>
+      <div class="login-prompt-icon">💐</div>
+      <p class="section-title" style="margin: 0 0 0.7rem;">Your bouquet is ready</p>
+      <p class="login-prompt-text" style="margin-bottom: 1.2rem;">
+        Would you like to support Digibouquet with a small donation?
+      </p>
+      <div style="display: flex; gap: 0.6rem; justify-content: center; flex-wrap: wrap;">
+        <button class="btn btn-primary btn-small" id="btn-donate-yes" type="button">Yes, Donate</button>
+        <button class="btn btn-secondary btn-small" id="btn-donate-later" type="button">Maybe Later</button>
+      </div>
+    </div>
+  `;
+
+  const closePrompt = () => {
+    overlay.classList.remove('visible');
+    setTimeout(() => {
+      if (overlay.parentElement) {
+        overlay.parentElement.removeChild(overlay);
+      }
+    }, 180);
+  };
+
+  document.body.appendChild(overlay);
+  requestAnimationFrame(() => overlay.classList.add('visible'));
+
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+      closePrompt();
+    }
+  });
+
+  overlay.querySelector('.login-prompt-close').addEventListener('click', closePrompt);
+  overlay.querySelector('#btn-donate-later').addEventListener('click', closePrompt);
+  overlay.querySelector('#btn-donate-yes').addEventListener('click', () => {
+    closePrompt();
+    openUpiPaymentModal();
+  });
 }
 
 async function generateShareUrl() {

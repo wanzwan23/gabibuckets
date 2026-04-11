@@ -119,15 +119,18 @@ function showUpiModal() {
   document.addEventListener('keydown', onEscape);
 }
 
-export async function handleUpiPayment(event) {
-  event.preventDefault();
-
+export function openUpiPaymentModal() {
   if (isMobileDevice()) {
     window.location.href = buildUpiLink();
     return;
   }
 
   showUpiModal();
+}
+
+export async function handleUpiPayment(event) {
+  event.preventDefault();
+  openUpiPaymentModal();
 }
 
 export { UPI_ID };
