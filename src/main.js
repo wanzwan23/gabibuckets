@@ -10,7 +10,7 @@ import { initThemeToggle } from './theme.js';
 import { initMuteToggle } from './utils/audio.js';
 
 const app = document.getElementById('app');
-const SEO_BASE_URL = 'https://digibouquet.vercel.app';
+const SEO_BASE_URL = 'https://digibouquet-sooty.vercel.app';
 
 const SEO_DEFAULT = {
   title: 'Digibouquet | Send a Digital Flower Bouquet',
