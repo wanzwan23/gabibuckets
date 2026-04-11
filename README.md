@@ -1,142 +1,159 @@
 <div align="center">
 
-<img src="public/color/flowers/peony.png" alt="Digibouquet flower" width="120" />
+<img src="public/color/flowers/peony.png" alt="Digibouquet Logo" width="140" style="margin-bottom: 20px;" />
 
-# Digibouquet
+# 🌷 Digibouquet
 
-### Craft and share digital flower bouquets with heart.
+**Craft, personalize, and share digital flower bouquets that never wilt.**
 
-<p>
+<p align="center">
+  <a href="https://digibouquet-sooty.vercel.app/"><img alt="Live Demo" src="https://img.shields.io/badge/🟢_Live_Demo-Online-success?style=for-the-badge" /></a>
   <img alt="Vite" src="https://img.shields.io/badge/Vite-7.3.1-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-ESM-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111" />
   <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-2ea44f?style=for-the-badge" />
 </p>
 
-<p>
-  <a href="https://digibouquet-sooty.vercel.app/"><b>Live Demo</b></a>
-  ·
-  <a href="#-features"><b>Features</b></a>
-  ·
-  <a href="#-screenshots"><b>Screenshots</b></a>
-  ·
-  <a href="#-deploy"><b>Deploy</b></a>
+<p align="center">
+  <a href="#-the-experience"><b>Experience</b></a> • 
+  <a href="#-features"><b>Features</b></a> • 
+  <a href="#-tech-stack"><b>Tech</b></a> • 
+  <a href="#-getting-started"><b>Deploy</b></a>
 </p>
-
-</div>
 
 ---
 
-## Bloom Story
+<img src="public/og-image.png" alt="Digibouquet Cover" width="100%" style="border-radius: 12px; margin-top: 15px; border: 1px solid #ddd;" />
 
-Digibouquet is a modern bouquet builder where people can design expressive floral arrangements, personalize them, and share them instantly. It is playful, emotional, and built for gifting moments that do not fade.
+</div>
 
-## Features
+<br/>
 
-| Experience | What it does |
-| --- | --- |
-| Build Mode | Choose color or monochrome bouquet styles |
-| Smart Picking | Pick 6-10 flowers, use templates, or tap Surprise Me |
-| Arrangement Canvas | Drag and place flowers with natural layered composition |
-| Polish | Choose wraps, greenery, and a bouquet message |
-| Share Tools | Download image, copy image, and share links |
-| Garden | Explore community bouquets and save your own |
-| Profile | Create local profile with avatar and bouquet history |
-| Quality of Life | Theme toggle, audio toggle, keyboard shortcuts |
+## 📖 The Story
 
-## Screenshots
+**Digibouquet** is a modern, interactive web platform where people can design expressive floral arrangements, deeply personalize them, and share them instantly with friends and loved ones. Built with pure JavaScript and a focus on smooth drag-and-drop mechanics, the app provides a playful, emotional, and satisfying gifting experience. It’s completely free, requires no water, and the memories last forever.
 
-<p align="center">
-  <img src="screenshots/Screenshot%202026-04-12%20003413.png" alt="Home screen" width="47%" />
-  <img src="screenshots/Screenshot%202026-04-12%20003423.png" alt="Flower picker" width="47%" />
-</p>
+> _"For gifting moments that do not fade."_
 
-<p align="center">
-  <img src="screenshots/Screenshot%202026-04-12%20003432.png" alt="Arrangement canvas" width="47%" />
-  <img src="screenshots/Screenshot%202026-04-12%20003449.png" alt="Finish bouquet" width="47%" />
-</p>
+---
 
-<p align="center">
-  <img src="screenshots/Screenshot%202026-04-12%20003503.png" alt="Garden gallery" width="47%" />
-  <img src="screenshots/Screenshot%202026-04-12%20003554.png" alt="Profile view" width="47%" />
-</p>
+## ✨ Features & Walkthrough
 
-<p align="center">
-  <img src="screenshots/Screenshot%202026-04-12%20003710.png" alt="Responsive mobile layout" width="72%" />
-</p>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🎨 1. Build Mode</h3>
+      <p>Start your arrangement by curating a mood. Choose between vibrant full-color bouquets or sleek monochrome styles depending on your recipient.</p>
+    </td>
+    <td width="50%" valign="top">
+      <img src="screenshots/Screenshot%202026-04-12%20003413.png" alt="Home screen" width="100%" style="border-radius:8px" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="screenshots/Screenshot%202026-04-12%20003423.png" alt="Flower picker" width="100%" style="border-radius:8px" />
+    </td>
+    <td width="50%" valign="top">
+      <h3>🌺 2. Smart Picking</h3>
+      <p>Select 6 to 10 unique flowers from an expansive library. Not feeling creative? Use quick templates or tap "Surprise Me" for an algorithmic layout.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>✨ 3. Interactive Canvas</h3>
+      <p>Drag, drop, arrange, and rotate flowers on a dynamic canvas. The app handles natural z-index layering to make your bouquet look professionally composed.</p>
+    </td>
+    <td width="50%" valign="top">
+      <img src="screenshots/Screenshot%202026-04-12%20003432.png" alt="Arrangement canvas" width="100%" style="border-radius:8px" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="screenshots/Screenshot%202026-04-12%20003449.png" alt="Finish bouquet" width="100%" style="border-radius:8px" />
+    </td>
+    <td width="50%" valign="top">
+      <h3>🎀 4. Polish & Share</h3>
+      <p>Wrap it up! Add greenery, pick a ribbon, and attach a heartfelt text message. Then instantly download the image, copy it to clipboard, or share a direct link.</p>
+    </td>
+  </tr>
+</table>
 
-## Tech Stack
+### 💎 Additional Gems
+- **The Garden**: Explore a community gallery of generated bouquets and save your own.
+- **Local Profiles**: Keep an isolated history of everything you’ve created with custom avatars.
+- **Micro-Interactions**: Features a dark/light theme toggle, ambient audio mode, celebratory confetti, and fluid page transitions.
 
-- Vite 7
-- Vanilla JavaScript (ES modules)
-- HTML + CSS
-- html2canvas for bouquet export
+<br>
 
-## Project Structure
+<div align="center">
+  <img src="screenshots/Screenshot%202026-04-12%20003710.png" alt="Responsive Layouts" width="70%" style="border-radius: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.1);" />
+  <p><i>Flawless responsive design for mobile, tablet, and desktop.</i></p>
+</div>
 
-```text
-src/
-  data/        flower catalog and bouquet presets
-  pages/       route-level page renderers
-  utils/       audio, auth, confetti, upi helpers
-  main.js      app bootstrap and route mapping
-  router.js    hash-based SPA router with transitions
-  style.css    UI styling and animations
-  theme.js     dark and light theme persistence
-public/
-  color/       colored flower assets
-  mono/        monochrome flower assets
-screenshots/   README visual gallery
-```
+<br>
 
-## Run Locally
+---
+
+## 💻 Tech Stack
+
+Digibouquet is built to be fast, lightweight, and completely decentralized from heavy frameworks. 
+
+- **Bundler**: `Vite 7`
+- **Logic**: Vanilla JavaScript (`ES Modules`)
+- **Styling**: Modern HTML5 + Custom CSS Variables
+- **Exporting**: `html2canvas` for precise screenshot rendering
+- **Routing**: Custom Hash-based SPA Router with state transitions
+
+---
+
+## 🚀 Getting Started
+
+Want to run the garden locally? It takes less than a minute.
 
 ### Prerequisites
+- Node.js 18.x or newer
+- npm 9.x or newer
 
-- Node.js 18 or newer
-- npm 9 or newer
-
-### Install
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/yourusername/digibouquet.git
+
+# Enter the directory
+cd digibouquet
+
+# Install dependencies
 npm install
-```
 
-### Start Development Server
-
-```bash
+# Start the dev server
 npm run dev
 ```
 
-### Production Build
+Your app will be running at `http://localhost:5173`.
 
-```bash
-npm run build
-npm run preview
-```
+---
 
-## Deploy
+## 🌐 Deploying
 
-### Vercel
-
+### Option 1: Vercel (Recommended)
 ```bash
 npm i -g vercel
 vercel login
 vercel --prod
 ```
 
-### Netlify
+### Option 2: Netlify
+Set the **Build command** to `npm run build` and **Publish directory** to `dist`.
 
-- Build command: npm run build
-- Publish directory: dist
+---
 
-## SEO Included
+## 🔍 SEO & Accessibility
+- Fully integrated JSON-LD structured data.
+- Open Graph imagery, Twitter cards, and semantic HTML structure.
+- ARIA accessibility guidelines enforced on custom interactive components.
 
-- Route-aware title and description updates
-- Open Graph and Twitter metadata
-- Canonical URLs
-- robots.txt and sitemap.xml
-- JSON-LD structured data for web application
+---
 
-## License
-
-MIT
+<div align="center">
+  <p>Built with ❤️ and ☕. Released under the <b>MIT License</b>.</p>
+</div>
