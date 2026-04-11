@@ -13,7 +13,7 @@
 </p>
 
 <p>
-  <a href="https://digibouquet.vercel.app/"><b>Live Demo</b></a>
+  <a href="https://digibouquet-sooty.vercel.app/"><b>Live Demo</b></a>
   ·
   <a href="#-features"><b>Features</b></a>
   ·
