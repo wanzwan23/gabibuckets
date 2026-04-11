@@ -45,7 +45,7 @@
       <p>Start your arrangement by curating a mood. Choose between vibrant full-color bouquets or sleek monochrome styles depending on your recipient.</p>
     </td>
     <td width="50%" valign="top">
-      <img src="screenshots/Screenshot%202026-04-12%20003413.png" alt="Home screen" width="100%" style="border-radius:8px" />
+      <img src="screenshots/Screenshot 2026-04-12 003554.png" alt="Home screen" width="100%" style="border-radius:8px" />
     </td>
   </tr>
   <tr>
