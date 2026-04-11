@@ -50,7 +50,7 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <img src="screenshots/Screenshot%202026-04-12%20003423.png" alt="Flower picker" width="100%" style="border-radius:8px" />
+      <img src="screenshots/Screenshot 2026-04-12 003503.png" alt="Flower picker" width="100%" style="border-radius:8px" />
     </td>
     <td width="50%" valign="top">
       <h3>🌺 2. Smart Picking</h3>
