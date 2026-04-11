@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://digibouquet.vercel.app/sitemap.xml
