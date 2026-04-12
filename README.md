@@ -45,12 +45,12 @@
       <p>Start your arrangement by curating a mood. Choose between vibrant full-color bouquets or sleek monochrome styles depending on your recipient.</p>
     </td>
     <td width="50%" valign="top">
-      <img src="screenshots/Screenshot%202026-04-12%20003413.png" alt="Home screen" width="100%" style="border-radius:8px" />
+      <img src="screenshots/Screenshot 2026-04-12 003554.png" alt="Home screen" width="100%" style="border-radius:8px" />
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <img src="screenshots/Screenshot%202026-04-12%20003423.png" alt="Flower picker" width="100%" style="border-radius:8px" />
+      <img src="screenshots/Screenshot 2026-04-12 003503.png" alt="Flower picker" width="100%" style="border-radius:8px" />
     </td>
     <td width="50%" valign="top">
       <h3>🌺 2. Smart Picking</h3>
@@ -68,7 +68,7 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <img src="screenshots/Screenshot%202026-04-12%20003449.png" alt="Finish bouquet" width="100%" style="border-radius:8px" />
+      <img src="screenshots/Screenshot 2026-04-12 003710.png" alt="Finish bouquet" width="100%" style="border-radius:8px" />
     </td>
     <td width="50%" valign="top">
       <h3>🎀 4. Polish & Share</h3>
