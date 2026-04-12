@@ -8,6 +8,7 @@ import { renderAbout } from './pages/about.js';
 import { renderNotFound } from './pages/notfound.js';
 import { initThemeToggle } from './theme.js';
 import { initMuteToggle } from './utils/audio.js';
+import { inject } from '@vercel/analytics';
 
 const app = document.getElementById('app');
 const SEO_BASE_URL = 'https://digibouquet-sooty.vercel.app';
@@ -61,6 +62,7 @@ initThemeToggle();
 initMuteToggle();
 initProfileButton();
 initScrollToTop();
+inject();
 
 const router = new Router({
   '/': {

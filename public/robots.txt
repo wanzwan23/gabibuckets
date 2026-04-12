@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://digibouquet-sooty.vercel.app/sitemap.xml
+Sitemap: https://digibouquet-sooty.vercel.app/sitemap-main.xml
